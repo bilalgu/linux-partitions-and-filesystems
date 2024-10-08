@@ -27,6 +27,7 @@ Le système de fichiers est de type `ext4`, donc il doit être redimensionné à
    ```
 
 ![screenshot_1](screenshot_1.png)
+   
    *(Dans cet exemple, la partition à redimensionner est `/dev/sda3`)*
 
 2. Vérifier et corriger les erreurs éventuelles du système de fichiers :
