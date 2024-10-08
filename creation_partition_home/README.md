@@ -26,7 +26,7 @@ Le système de fichiers est de type `ext4`, donc il doit être redimensionné à
    sudo fdisk -l /dev/sda
    ```
 
-![[Pasted image 20241008163237.png]]
+![screenshot_1](screenshot_1.png)
    *(Dans cet exemple, la partition à redimensionner est `/dev/sda3`)*
 
 2. Vérifier et corriger les erreurs éventuelles du système de fichiers :
@@ -105,7 +105,7 @@ Le système de fichiers est de type `ext4`, donc il doit être redimensionné à
 
    Cette commande crée un système de fichiers `ext4` sur la nouvelle partition avec l'étiquette (label) `/home`. 
 
-![[Pasted image 20241008164111.png]]
+![screenshot_2](screenshot_2.png)
    
 La partition est maintenant prête à accueillir le répertoire `/home` !
 
@@ -124,7 +124,7 @@ La partition est maintenant prête à accueillir le répertoire `/home` !
    mount | grep home
    ```
 
-![[Pasted image 20241008164227.png]]
+![screenshot_3](screenshot_3.png)
 
 3. Copier le contenu de l'ancien répertoire `/home` vers la nouvelle partition tout en conservant les permissions :
 
@@ -177,7 +177,7 @@ Après le redémarrage, vous pouvez vérifier que tout est en ordre avec la comm
 df -h | grep home
 ```
 
-![[Pasted image 20241008164655.png]]
+![screenshot_4](screenshot_4.png)
 
 ---
 
